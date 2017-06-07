@@ -16,7 +16,7 @@
             color: darken($theme-primary, 0.1);
         }
     }
-    a.navbar-brand {
+    .navbar-title {
         display: none;
     }
     .navbar-toggle {
@@ -47,7 +47,7 @@
         }
     }
     @media (min-width: 450px) {
-        a.navbar-brand {
+        .navbar-title {
             display: inline-block;
         }
     }
@@ -61,7 +61,7 @@
                 color: white;
             }
         }
-        a.navbar-brand {
+        .navbar-title {
             display: none;
         }
         .navbar-nav > li.nav-item > a.nav-link,
@@ -81,7 +81,7 @@
                     color: darken($theme-primary, 0.1);
                 }
             }
-            a.navbar-brand {
+            .navbar-title {
                 display: inline-block;
             }
             .navbar-nav > li.nav-item > a.nav-link,

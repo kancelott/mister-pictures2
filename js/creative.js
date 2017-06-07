@@ -18,7 +18,7 @@
     // Activate scrollspy to add active class to navbar items on scroll
     $('body').scrollspy({
         target: '#mainNav',
-        offset: 48
+        offset: 148
     });
 
     // Closes responsive menu when a link is clicked
@@ -28,7 +28,7 @@
 
     // Collapse the navbar when page is scrolled
     $(window).scroll(function() {
-        if ($("#mainNav").offset().top > 50) {
+        if ($("#mainNav").offset().top > 100) {
             $("#mainNav").addClass("navbar-shrink");
         } else {
             $("#mainNav").removeClass("navbar-shrink");

@@ -115,7 +115,7 @@ footer {
     padding-top: 3px; }
     #mainNav .navbar-brand:hover, #mainNav .navbar-brand:focus {
       color: #a93f55; }
-  #mainNav a.navbar-brand {
+  #mainNav .navbar-title {
     display: none; }
   #mainNav .navbar-toggle {
     font-weight: 700;
@@ -139,7 +139,7 @@ footer {
       #mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active:hover {
         background-color: transparent; }
   @media (min-width: 450px) {
-    #mainNav a.navbar-brand {
+    #mainNav .navbar-title {
       display: inline-block; } }
   @media (min-width: 992px) {
     #mainNav {
@@ -149,7 +149,7 @@ footer {
         color: rgba(255, 255, 255, 0.7); }
         #mainNav .navbar-brand:hover, #mainNav .navbar-brand:focus {
           color: white; }
-      #mainNav a.navbar-brand {
+      #mainNav .navbar-title {
         display: none; }
       #mainNav .navbar-nav > li.nav-item > a.nav-link,
       #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
@@ -164,7 +164,7 @@ footer {
           color: #a93f55; }
           #mainNav.navbar-shrink .navbar-brand:hover, #mainNav.navbar-shrink .navbar-brand:focus {
             color: #a93f55; }
-        #mainNav.navbar-shrink a.navbar-brand {
+        #mainNav.navbar-shrink .navbar-title {
           display: inline-block; }
         #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link,
         #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus {
