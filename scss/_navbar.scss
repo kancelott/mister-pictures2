@@ -7,12 +7,17 @@
     .navbar-brand {
         color: $theme-primary;
         @include sans-serif-font;
-        font-weight: 700;
+        font-weight: 600;
+        font-size: 16px;
         text-transform: uppercase;
+        padding-top: 3px;
         &:hover,
         &:focus {
             color: darken($theme-primary, 0.1);
         }
+    }
+    a.navbar-brand {
+        display: none;
     }
     .navbar-toggle {
         font-weight: 700;
@@ -41,6 +46,11 @@
             }
         }
     }
+    @media (min-width: 450px) {
+        a.navbar-brand {
+            display: inline-block;
+        }
+    }
     @media (min-width: 992px) {
         background-color: transparent;
         border-color: fade-out(white, 0.7);
@@ -50,6 +60,9 @@
             &:focus {
                 color: white;
             }
+        }
+        a.navbar-brand {
+            display: none;
         }
         .navbar-nav > li.nav-item > a.nav-link,
         .navbar-nav > li.nav-item > a.nav-link:focus {
@@ -63,11 +76,13 @@
             border-color: fade-out($gray-darker, 0.95);
             .navbar-brand {
                 color: $theme-primary;
-                font-size: 16px;
                 &:hover,
                 &:focus {
                     color: darken($theme-primary, 0.1);
                 }
+            }
+            a.navbar-brand {
+                display: inline-block;
             }
             .navbar-nav > li.nav-item > a.nav-link,
             .navbar-nav > li.nav-item > a.nav-link:focus {

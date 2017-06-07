@@ -11,21 +11,11 @@ body {
 }
 
 hr {
-    border: 0;
-    text-align: center;
-    line-height: 0px;
-    font-size: 2em;
-    margin: 40px 10px;
-}
-
-hr:before {
-    content: "\1F65C";
-    display: inline;
-}
-
-/* opera doesn't render correctly. hide section sign */
-x:-o-prefocus, hr:after {
-  content: "";
+    max-width: 50px;
+    border-width: 3px;
+    border-color: $theme-primary;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 hr.light {
@@ -48,6 +38,7 @@ h4,
 h5,
 h6 {
     @include sans-serif-font;
+    margin-bottom: 40px;
 }
 
 p {
@@ -55,6 +46,10 @@ p {
     line-height: 1.5;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.avoid-wrap {
+    display: inline-block;
 }
 
 .bg-primary {
@@ -113,10 +108,11 @@ footer {
     color: fade-out(white, 0.3);
     padding: 15px 0;
     h4 {
-        font-size: 16px;
+        font-size: 12pt;
+        margin-bottom: 7pt;
     }
     p {
-        font-size: 12px;
-        margin:0;
+        font-size: 9pt;
+        margin: 0;
     }
 }

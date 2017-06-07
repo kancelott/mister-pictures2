@@ -20,8 +20,11 @@
             }
         }
 
-        .map-address {
-            margin: 30px 0 60px;
+        #address {
+            -webkit-transform: translateY(-10%);
+            -ms-transform: translateY(-10%);
+            transform: translateY(-10%);
+            margin-top: 40px;
         }
     }
 }
