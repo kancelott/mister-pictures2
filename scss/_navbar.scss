@@ -4,6 +4,7 @@
     border-color: fade-out($gray-darker, 0.95);
     @include sans-serif-font;
     @include transition-all;
+
     .navbar-brand {
         color: $theme-primary;
         @include sans-serif-font;
@@ -16,15 +17,18 @@
             color: darken($theme-primary, 0.1);
         }
     }
+
     .navbar-title {
         display: none;
     }
+
     .navbar-toggle {
         font-weight: 700;
         font-size: 12px;
         color: $gray-darker;
         text-transform: uppercase;
     }
+
     .navbar-nav {
         > li.nav-item {
             > a.nav-link,
@@ -46,11 +50,13 @@
             }
         }
     }
+
     @media (min-width: 370px) {
         .navbar-title {
             display: inline-block;
         }
     }
+
     @media (min-width: 992px) {
         background-color: transparent;
         border-color: fade-out(white, 0.7);
@@ -61,9 +67,11 @@
                 color: white;
             }
         }
+
         .navbar-title {
             display: none;
         }
+
         .navbar-nav > li.nav-item > a.nav-link,
         .navbar-nav > li.nav-item > a.nav-link:focus {
             color: fade-out(white, 0.3);
@@ -71,6 +79,7 @@
                 color: white;
             }
         }
+
         &.navbar-shrink {
             background-color: $theme-bg;
             border-color: fade-out($gray-darker, 0.95);

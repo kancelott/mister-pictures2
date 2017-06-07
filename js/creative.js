@@ -8,7 +8,7 @@
             target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
             if (target.length) {
                 $('html, body').animate({
-                    scrollTop: (target.offset().top - 100)
+                    scrollTop: (target.offset().top - 48)
                 }, 1000, "easeInOutExpo");
                 return false;
             }
@@ -18,7 +18,7 @@
     // Activate scrollspy to add active class to navbar items on scroll
     $('body').scrollspy({
         target: '#mainNav',
-        offset: 100
+        offset: 48
     });
 
     // Closes responsive menu when a link is clicked
@@ -67,5 +67,8 @@
             tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
         }
     });
+
+    // headroom.js header hiding
+    // $("#mainNav").headroom();
 
 })(jQuery); // End of use strict
