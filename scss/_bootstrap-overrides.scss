@@ -35,8 +35,9 @@
 
 // XXX horizontal scrollbar fix
 // https://stackoverflow.com/questions/23768152/using-container-fluid-within-bootstrap-cause-horizontal-scrollbar
-body {
-  overflow-x: hidden;
+.row {
+    margin-left: 0;
+    margin-right: 0;
 }
 
 @media (max-width: 576px) {

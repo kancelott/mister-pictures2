@@ -138,7 +138,7 @@ footer {
       #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover,
       #mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active:hover {
         background-color: transparent; }
-  @media (min-width: 450px) {
+  @media (min-width: 370px) {
     #mainNav .navbar-title {
       display: inline-block; } }
   @media (min-width: 992px) {
@@ -406,8 +406,9 @@ header.masthead {
 .navbar-toggler {
   z-index: 1; }
 
-body {
-  overflow-x: hidden; }
+.row {
+  margin-left: 0;
+  margin-right: 0; }
 
 @media (max-width: 576px) {
   nav > .container {
