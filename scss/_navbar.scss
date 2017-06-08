@@ -1,3 +1,19 @@
+// headroom.js navbar hiding
+.headroom {
+    will-change: transform;
+    transition: transform 200ms linear;
+}
+.headroom--pinned {
+    -webkit-transform: translateY(0%);
+        -ms-transform: translateY(0%);
+            transform: translateY(0%);
+}
+.headroom--unpinned {
+    -webkit-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+            transform: translateY(-100%);
+}
+
 // Styling for the navbar
 #mainNav {
     background-color: $theme-bg;

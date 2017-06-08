@@ -1,6 +1,9 @@
 (function($) {
     "use strict"; // Start of use strict
 
+    // headroom.js navbar hiding
+    $('#mainNav').headroom();
+
     // Smooth scrolling using jQuery easing
     $('a[href*="#"]:not([href="#"])').click(function() {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
@@ -67,8 +70,5 @@
             tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
         }
     });
-
-    // headroom.js header hiding
-    // $("#mainNav").headroom();
 
 })(jQuery); // End of use strict
