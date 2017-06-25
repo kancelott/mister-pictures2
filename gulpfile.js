@@ -5,6 +5,7 @@ var header = require('gulp-header');
 var cleanCSS = require('gulp-clean-css');
 var rename = require("gulp-rename");
 var uglify = require('gulp-uglify');
+var sitemap = require('gulp-sitemap');
 var pkg = require('./package.json');
 
 // Set the banner content
@@ -82,8 +83,25 @@ gulp.task('copy', function() {
         .pipe(gulp.dest('vendor/font-awesome'))
 })
 
+// Generate sitemap
+gulp.task('sitemap', function () {
+    gulp.src('*.html', {
+            read: false,
+            lastmod: function(file) {
+                var cmd = 'git log -1 --format=%cI "' + file.relative + '"';
+                return execSync(cmd, {
+                    cwd: file.base
+                }).toString().trim();
+            }
+        })
+        .pipe(sitemap({
+            siteUrl: 'https://yarravillepictureframing.com.au'
+        }))
+        .pipe(gulp.dest('./'));
+});
+
 // Default task
-gulp.task('default', ['sass', 'minify-css', 'minify-js', 'copy']);
+gulp.task('default', ['sass', 'minify-css', 'minify-js', 'copy', 'sitemap']);
 
 // Configure the browserSync task
 gulp.task('browserSync', function() {

@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: http://yarravillepictureframing.com.au/sitemap.xml
