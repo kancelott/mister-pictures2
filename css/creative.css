@@ -220,7 +220,7 @@ header.masthead {
       font-size: 16px;
       margin-bottom: 20px; }
     header.masthead .header-content .header-content-inner a {
-      margin-top: 30px; }
+      margin: 30px; }
   header.masthead .intro-details p {
     font-size: 12px; }
   @media (min-width: 768px) {
