@@ -1,5 +1,5 @@
 /*!
- * Yarraville Picture Framing - Createive v4.0.0-alpha (http://startbootstrap.com/template-overviews/creative)
+ * Yarraville Picture Framing - Creative v4.0.0-alpha (http://startbootstrap.com/template-overviews/creative)
  * Copyright 2013-2017 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-creative/blob/master/LICENSE)
  */
@@ -426,3 +426,12 @@ header.masthead {
 @media (max-width: 576px) {
   nav > .container {
     width: 100%; } }
+
+.notice {
+  background: #eeeeff;
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  top: 0;
+  z-index: 1;
+}
