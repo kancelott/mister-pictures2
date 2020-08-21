@@ -155,7 +155,9 @@ footer {
     color: #ffc800; }
   @media (min-width: 370px) {
     #mainNav .navbar-title {
-      display: inline-block; } }
+      display: inline-block; }
+    #mainNav .notice {
+      color: #292b2c; } }
   @media (min-width: 992px) {
     #mainNav {
       background-color: transparent;
