@@ -69,6 +69,10 @@
         }
     }
 
+    .notice {
+        color: #ffc800;
+    }
+
     @media (min-width: 370px) {
         .navbar-title {
             display: inline-block;
@@ -117,6 +121,9 @@
                 &:hover {
                     color: $theme-primary;
                 }
+            }
+            .notice {
+                color: #292b2c;
             }
         }
     }
