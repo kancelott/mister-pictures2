@@ -69,10 +69,6 @@
         }
     }
 
-    .notice {
-        color: #ffc800;
-    }
-
     @media (min-width: 370px) {
         .navbar-title {
             display: inline-block;
@@ -95,6 +91,11 @@
 
         .navbar-title {
             display: none;
+        }
+
+
+        .notice {
+            color: #ffc800;
         }
 
         .navbar-nav > li.nav-item > a.nav-link,

@@ -151,8 +151,6 @@ footer {
       #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover,
       #mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active:hover {
         background-color: transparent; }
-  #mainNav .notice {
-    color: #ffc800; }
   @media (min-width: 370px) {
     #mainNav .navbar-title {
       display: inline-block; }
@@ -168,6 +166,8 @@ footer {
           color: white; }
       #mainNav .navbar-title {
         display: none; }
+      #mainNav .notice {
+        color: #ffc800; }
       #mainNav .navbar-nav > li.nav-item > a.nav-link,
       #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
         color: rgba(255, 255, 255, 0.7); }
