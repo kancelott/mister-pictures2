@@ -69,15 +69,6 @@
         }
     }
 
-    @media (min-width: 370px) {
-        .navbar-title {
-            display: inline-block;
-        }
-        .notice {
-            color: #292b2c;
-        }
-    }
-
     @media (min-width: 992px) {
         background-color: transparent;
         border-color: fade-out(white, 0.7);
@@ -129,6 +120,15 @@
             .notice {
                 color: #292b2c;
             }
+        }
+    }
+
+    @media (min-width: 370px) {
+        .navbar-title {
+            display: inline-block;
+        }
+        .notice {
+            color: #292b2c;
         }
     }
 }
