@@ -151,6 +151,11 @@ footer {
       #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover,
       #mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active:hover {
         background-color: transparent; }
+  @media (min-width: 370px) {
+    #mainNav .navbar-title {
+      display: inline-block; }
+    #mainNav .notice {
+      color: #292b2c; } }
   @media (min-width: 992px) {
     #mainNav {
       background-color: transparent;
@@ -186,11 +191,6 @@ footer {
             color: #a93f55; }
         #mainNav.navbar-shrink .notice {
           color: #292b2c; } }
-  @media (min-width: 370px) {
-    #mainNav .navbar-title {
-      display: inline-block; }
-    #mainNav .notice {
-      color: #292b2c; } }
 
 header.masthead {
   position: relative;
