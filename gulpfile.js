@@ -113,7 +113,14 @@ gulp.task('browserSync', function() {
 })
 
 // Dev task with browserSync
-gulp.task('dev', ['browserSync', 'sass', 'minify-css', 'minify-js'], function() {
+gulp.task('dev', ['sass', 'minify-css', 'minify-js'], function() {
+    browserSync.init({
+        open: false,
+        server: {
+            baseDir: './',
+            index: "index.html"
+        }
+    });
     gulp.watch('scss/*.scss', ['sass']);
     gulp.watch('css/*.css', ['minify-css']);
     gulp.watch('js/*.js', ['minify-js']);

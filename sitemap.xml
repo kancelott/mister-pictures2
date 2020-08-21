@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     <url>
+        
         <loc>https://yarravillepictureframing.com.au/</loc>
-        <lastmod>2017-07-12T08:44:40.298Z</lastmod>
+    
+        
+        <lastmod>2020-08-21T00:26:45.858Z</lastmod>
+    
     </url>
 </urlset>

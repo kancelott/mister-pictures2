@@ -1,6 +1,6 @@
 /*!
- * Yarraville Picture Framing - Creative v4.0.0-alpha (http://startbootstrap.com/template-overviews/creative)
- * Copyright 2013-2017 Start Bootstrap
+ * Yarraville Picture Framing - Createive v4.0.0-alpha (http://startbootstrap.com/template-overviews/creative)
+ * Copyright 2013-2020 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-creative/blob/master/LICENSE)
  */
 html,
@@ -151,6 +151,8 @@ footer {
       #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover,
       #mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active:hover {
         background-color: transparent; }
+  #mainNav .notice {
+    color: #ffc800; }
   @media (min-width: 370px) {
     #mainNav .navbar-title {
       display: inline-block; } }
@@ -184,7 +186,9 @@ footer {
           color: #6d708c; }
           #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:hover,
           #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus:hover {
-            color: #a93f55; } }
+            color: #a93f55; }
+        #mainNav.navbar-shrink .notice {
+          color: #292b2c; } }
 
 header.masthead {
   position: relative;
@@ -426,12 +430,3 @@ header.masthead {
 @media (max-width: 576px) {
   nav > .container {
     width: 100%; } }
-
-.notice {
-  background: #eeeeff;
-  position: fixed;
-  width: 100%;
-  height: 100px;
-  top: 0;
-  z-index: 1;
-}
