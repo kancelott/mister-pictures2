@@ -59,7 +59,7 @@
     $('.popup-gallery').magnificPopup({
         delegate: 'a',
         type: 'image',
-        tLoading: 'Loading image #%curr%...',
+        tLoading: 'Loading...',
         mainClass: 'mfp-img-mobile',
         gallery: {
             enabled: true,

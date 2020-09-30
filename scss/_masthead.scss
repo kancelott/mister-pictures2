@@ -1,11 +1,20 @@
-// Styling for the masthead
+.webp {
+    header.masthead {
+        background-image: url('../img/header.webp');
+    }
+}
+.no-webp, .no-js {
+    header.masthead {
+        background-image: url('../img/header.jpg');
+    }
+}
+
 header.masthead {
     position: relative;
     width: 100%;
     min-height: auto;
     @include background-cover;
     background-position: center;
-    background-image: url('../img/header.jpg');
     text-align: center;
     color: white;
 

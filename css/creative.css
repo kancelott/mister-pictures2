@@ -192,6 +192,12 @@ footer {
         #mainNav.navbar-shrink .notice {
           color: #292b2c; } }
 
+.webp header.masthead {
+  background-image: url("../img/header.webp"); }
+
+.no-webp header.masthead, .no-js header.masthead {
+  background-image: url("../img/header.jpg"); }
+
 header.masthead {
   position: relative;
   width: 100%;
@@ -201,7 +207,6 @@ header.masthead {
   background-size: cover;
   -o-background-size: cover;
   background-position: center;
-  background-image: url("../img/header.jpg");
   text-align: center;
   color: white; }
   header.masthead .header-content {

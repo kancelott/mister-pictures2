@@ -7,6 +7,24 @@ var rename = require("gulp-rename");
 var uglify = require('gulp-uglify');
 var sitemap = require('gulp-sitemap');
 var pkg = require('./package.json');
+var modernizr = require('gulp-modernizr');
+
+// used for webp detection for CSS
+gulp.task('modernizr', function() {
+    return gulp.src('./js/*.js')
+        .pipe(modernizr('modernizr.min.js', {
+            "crawl": false,
+            "customTests": [],
+            "tests": [
+                "webp"
+            ],
+            "options": [
+                "setClasses"
+            ]
+        }))
+        .pipe(uglify())
+        .pipe(gulp.dest('js/'))
+});
 
 // Set the banner content
 var banner = ['/*!\n',
@@ -101,7 +119,7 @@ gulp.task('sitemap', function () {
 });
 
 // Default task
-gulp.task('default', ['sass', 'minify-css', 'minify-js', 'copy', 'sitemap']);
+gulp.task('default', ['modernizr', 'sass', 'minify-css', 'minify-js', 'copy', 'sitemap']);
 
 // Configure the browserSync task
 gulp.task('browserSync', function() {
@@ -113,7 +131,7 @@ gulp.task('browserSync', function() {
 })
 
 // Dev task with browserSync
-gulp.task('dev', ['sass', 'minify-css', 'minify-js'], function() {
+gulp.task('dev', ['modernizr', 'sass', 'minify-css', 'minify-js'], function() {
     browserSync.init({
         open: false,
         server: {
