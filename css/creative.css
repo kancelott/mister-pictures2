@@ -192,11 +192,11 @@ footer {
         #mainNav.navbar-shrink .notice {
           color: #292b2c; } }
 
-.no-webp header.masthead, .no-js header.masthead {
-  background-image: url("../img/header.jpg"); }
-
 .webp header.masthead {
   background-image: url("../img/header.webp"); }
+
+.no-webp header.masthead, .no-js header.masthead {
+  background-image: url("../img/header.jpg"); }
 
 header.masthead {
   position: relative;
