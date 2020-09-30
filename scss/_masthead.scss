@@ -1,11 +1,11 @@
-.webp {
-    header.masthead {
-        background-image: url('../img/header.webp');
-    }
-}
 .no-webp, .no-js {
     header.masthead {
         background-image: url('../img/header.jpg');
+    }
+}
+.webp {
+    header.masthead {
+        background-image: url('../img/header.webp');
     }
 }
 
